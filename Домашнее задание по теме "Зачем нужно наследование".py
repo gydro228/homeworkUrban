@@ -5,7 +5,7 @@ class Animal:
         self.fed = False
 
     def eat(self, food):
-        if type(food) == Plant:  
+        if isinstance(food, Plant):  
             if food.edible:
                 print(self.name, 'съел', food.name)
                 self.fed = True
